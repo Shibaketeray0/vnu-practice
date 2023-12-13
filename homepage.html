@@ -4,6 +4,9 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -16,16 +19,16 @@
     <div class="announce">
       20% OFF NEW SEASON TOP PICKS!*
     </div>
-
     <div class="menu-nav">
       <div class="search">
-        <img src="images/icons/search.svg" alt="search-icon" class="search-icon">
+        <a href="#">
+          <img src="images/icons/search.svg" alt="search-icon" class="search-icon">
+        </a>
         <input type="text" name="search" placeholder="what are you looking for?">
 
       </div>
       <div class="logo">
-        culture.
-
+        <img src="images/logo.svg" alt="logo">
       </div>
       <div class="account-nav">
         <a href="#">
@@ -38,20 +41,31 @@
           <img src="images/icons/bag.svg" alt="bag-icon">
         </a>
       </div>
-
     </div>
     <div class="menu-collection">
       <ul>
-        <li>new in</li>
-        <li>sale</li>
-        <li>clothing</li>
-        <li>shoes</li>
-        <li>tops</li>
-        <li>accessories</li>
+        <li>
+          <a href="#">new in</a>
+        </li>
+        <li>
+          <a href="#">sale</a>
+        </li>
+        <li>
+          <a href="#">clothing</a>
+        </li>
+        <li>
+          <a href="#">shoes</a>
+        </li>
+        <li>
+          <a href="#">tops</a>
+        </li>
+        <li>
+          <a href="#">accessories</a>
+        </li>
       </ul>
     </div>
   </header>
-  <main>
+  <main class="homepage-main">
     <div class="hero">
       <div class="discount">
         35% OFF EVERYTHING!*
@@ -62,25 +76,74 @@
       <div class="banner">
       </div>
     </div>
-
     <div class="trend-section">
       <div class="tabs">
         <ul>
-          <li>what's trending</li>
-          <li>member exclusives</li>
+          <li>
+            <a href="#">
+              what's trending
+            </a>
+          </li>
+          <li class="active-link">
+            <a href="">
+                member exclusives
+            </a>
+          </li>
         </ul>
       </div>
       <div class="product-list">
-        <div class="product-list-item"></div>
-        <div class="product-list-item"></div>
-        <div class="product-list-item"></div>
         <div class="product-list-item">
+            <img src="images/trend-block-photo1.png" alt="trend-photo">
+            <div class="product-list-item-price">
+                &dollar; 47
+            </div>
+            <div class="product-list-item-description">
+                street style top
+            </div>
+        </div>
+        <div class="product-list-item">
+            <img src="images/trend-block-photo2.png" alt="trend-photo">
+            <div class="product-list-item-price">
+                &dollar; 48
+            </div>
+            <div class="product-list-item-description">
+                sneakers with a bright mood
+            </div>
+        </div>
+        <div class="product-list-item">
+            <img src="images/trend-block-photo3.png" alt="trend-photo">
+            <div class="product-list-item-price">
+                &dollar; 49
+            </div>
+            <div class="product-list-item-description">
+                D. good shopper
+            </div>
+        </div>
+        <div class="product-list-item">
+            <img src="images/trend-block-photo4.png" alt="trend-photo">
+            <div class="product-list-item-price">
+                &dollar; 50
+            </div>
+            <div class="product-list-item-description">
+                eco leather skirt with chains
+            </div>
+
+        </div>
+        <div class="product-list-item">
+            <img src="images/trend-block-photo5.png" alt="trend-photo">
+            <div class="product-list-item-price">
+                &dollar; 51
+            </div>
+            <div class="product-list-item-description">
+                oversized gym sweatshirt with bright inserts
+            </div>
         </div>
         <div class="view-more-button">
-
+          <a href="#">
+            more
+          </a>
         </div>
       </div>
-
     </div>
     <div class="future-section">
       <h2>
@@ -88,58 +151,114 @@
       </h2>
       <div class="future-list">
         <div class="teaser-menu">
-          
+          <ul>
+            <li><a href="#">
+              summer clothing
+            </a>
+            </li>
+            <li>
+              <a href="#">
+                accessories
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                shoes
+              </a>
+            </li>
+          </ul>
+
         </div>
-        <div class="future-list-item"></div>
-        <div class="future-list-item"></div>
-        <div class="future-list-item"></div>
-        <div class="future-list-item"></div>
-        <div class="future-list-item"></div>
+        <div class="future-list-item">
+          <img src="images/future-collections-photo1.png" alt="future-collection-photo">
+        </div>
+        <div class="future-list-item">
+          <img src="images/future-collections-photo2.png" alt="future-collection-photo">
+        </div>
+        <div class="future-list-item">
+          <img src="images/future-collections-photo3.png" alt="future-collection-photo">
+        </div>
+        <div class="future-list-item">
+          <img src="images/future-collections-photo4.png" alt="future-collection-photo">
+        </div>
+        <div class="future-list-item">
+          <img src="images/future-collections-photo5.png" alt="future-collection-photo">
+        </div>
       </div>
 
     </div>
   </main>
   <footer>
-    <div class="about-us-info">
-      <h4>about us & service</h4>
-      <ul>
-        <li>about culture</li>
-        <li>shipping info</li>
-        <li>returns</li>
-        <li>size guide</li>
-        <li>help</li>
-        <li>privacy & cookies</li>
-      </ul>
-
-    </div>
-    <div class="payment-info">
-      <h4>payment</h4>
-      <span>Free shipping from &euro; 50 (Ukraine)</span>
-    </div>
-    <div class="contact-us-info">
-      <h4>contact us</h4>
-      <span>Please fill out your email address to stay up to date of future updates</span>
-      <div>
-        <input type="email" name="email" placeholder="your email address">
-        <a href="#">Send</a>
+    <div class="footer__inner">
+      <div class="about-us-info footer-block">
+        <h4>about us & service</h4>
+        <ul>
+          <li>
+            <a href="#">
+              about culture
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              shipping info
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              returns
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              size guide
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              help
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              privacy & cookies
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="contact-icons">
-        <a href="#">
-          <img src="../images/icons/facebook.svg" alt="">
-        </a>
-        <a href="#">
-
-        </a>
-        <a href="#">
-
-        </a>
+      <div class="payment-info footer-block">
+        <h4>payment</h4>
+        <span>Free shipping from &euro; 50 (Ukraine)</span>
+        <div class="payment-methods">
+          <div><img src="images/icons/visa_payment.svg" alt="visa-payment"></div>
+          <div><img src="images/icons/paypal_payment.svg" alt="paypal-payment"></div>
+          <div><img src="images/icons/mastercard_payment.svg" alt="mastercard-payment"></div>
+          <div><img src="images/icons/gpay_payment.svg" alt="gpay-payment"></div>
+          <div><img src="images/icons/apple_pay_payment.svg" alt="apple-pay-payment"></div>
+        </div>
       </div>
+      <div class="contact-us-info footer-block">
+        <h4>contact us</h4>
+        <span>Please fill out your email address to stay up to date of future updates</span>
+        <div class="mail-form">
+          <input type="email" name="email" placeholder="your email address">
+          <a href="#">Send</a>
+        </div>
+        <div class="contact-icons">
+          <a href="#">
+            <img src="images/icons/facebook.svg" alt="facebook-icon">
+          </a>
+          <a href="#">
+            <img src="images/icons/telegram.svg" alt="telegram-icon">
+          </a>
+          <a href="#">
+            <img src="images/icons/instagram.svg" alt="instagram-icon">
+          </a>
+        </div>
 
 
+      </div>
     </div>
-
   </footer>
 </div>
-
 </body>
 </html>

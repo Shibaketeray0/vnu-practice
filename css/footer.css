@@ -1,0 +1,73 @@
+footer {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+footer .footer__inner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+}
+footer .footer-block h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+}
+footer .about-us-info {
+  max-width: 200px;
+}
+footer .about-us-info ul {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+footer .about-us-info ul li {
+  padding: 8px 0;
+}
+footer .payment-info {
+  max-width: 220px;
+}
+footer .payment-info .payment-methods {
+  display: flex;
+  gap: 10px;
+}
+footer .payment-info .payment-methods img {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+footer .contact-us-info {
+  max-width: 280px;
+}
+footer .contact-us-info .mail-form input {
+  padding: 10px 0;
+  border: unset;
+  border-bottom: 1px solid #EDB5F1;
+}
+footer .contact-us-info .mail-form a {
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 20px;
+  background: #EDB5F1;
+  border: 1px solid black;
+  margin-left: 5px;
+}
+footer .contact-us-info .contact-icons {
+  display: flex;
+  gap: 16px;
+}
+footer .contact-us-info .contact-icons img {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}

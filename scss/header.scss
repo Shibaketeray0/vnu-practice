@@ -1,11 +1,56 @@
 @import "variables";
 
 header {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  .announce{
+    background: $purple-100;
+    color: $white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+  }
   .menu-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    div{
+      width: 30%;
+      text-align: center;
+    }
     .search {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       .search-icon {
         width: 30px;
         height: 30px;
+      }
+      input{
+        font-size: 13px;
+        border: none;
+        min-width: 200px;
+      }
+    }
+    .account-nav{
+      display: flex;
+      justify-content: end;
+      gap: 8px;
+    }
+  }
+
+  .menu-collection {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      a{
+        padding: 8px 12px;
       }
     }
   }

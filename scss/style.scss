@@ -47,9 +47,27 @@ table {
 }
 a{
   text-decoration: none;
+  color: inherit;
+}
+::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+:-moz-placeholder {
+  text-transform: uppercase;
+}
+::-moz-placeholder {
+  text-transform: uppercase;
+}
+:-ms-input-placeholder {
+  text-transform: uppercase;
+}
+::placeholder {
+  text-transform: uppercase;
 }
 
 .wrapper{
   width: 100vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

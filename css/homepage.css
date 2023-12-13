@@ -1,9 +1,130 @@
 .hero {
   width: 100%;
 }
-
-.banner {
+.hero .discount {
+  background: #FCCEFF;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2.08px;
+}
+.hero .discount span {
+  letter-spacing: normal;
+  font-size: 16px;
+  font-weight: 400;
+}
+.hero .banner {
   width: 100%;
   height: 860px;
   background: url("../images/banner.png") center no-repeat;
+}
+
+.homepage-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.homepage-main .trend-section {
+  background: #BDB4FF;
+  padding: 40px 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.homepage-main .trend-section .tabs {
+  font-size: 40px;
+  color: #FFFFFF;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  border-bottom: 1px solid #FCCEFF;
+}
+.homepage-main .trend-section .tabs ul {
+  display: flex;
+  gap: 40px;
+}
+.homepage-main .trend-section .tabs ul .active-link {
+  color: #FCCEFF;
+}
+.homepage-main .trend-section .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 40px;
+}
+.homepage-main .trend-section .product-list-item {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.homepage-main .trend-section .product-list-item img {
+  height: 400px;
+  width: auto;
+  object-fit: contain;
+}
+.homepage-main .trend-section .product-list-item-price {
+  font-size: 32px;
+  color: #EAFC88;
+  font-weight: 900;
+}
+.homepage-main .trend-section .product-list-item-description {
+  font-size: 19px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.homepage-main .trend-section .product-list .view-more-button {
+  text-transform: uppercase;
+  font-family: Impact, sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFFFFF;
+}
+.homepage-main .trend-section .product-list .view-more-button a {
+  padding: 92px 52px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  position: relative;
+  top: 33%;
+}
+.homepage-main .future-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px 40px;
+  background: #FFB985;
+}
+.homepage-main .future-section h2 {
+  font-size: 84px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.homepage-main .future-section .future-list {
+  display: flex;
+  gap: 30px;
+}
+.homepage-main .future-section .future-list div {
+  width: 280px;
+}
+.homepage-main .future-section .teaser-menu {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  align-self: end;
+}
+.homepage-main .future-section .teaser-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #FFFFFF;
 }

@@ -1,0 +1,99 @@
+.about-main .hero-about {
+  background-color: #BDB4FF;
+  background-image: url("../images/about-main-photo.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 870px;
+  display: flex;
+  align-items: center;
+}
+.about-main .hero-about .about-text {
+  color: #FFFFFF;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  max-width: 50%;
+  margin-left: 180px;
+  line-height: normal;
+}
+.about-main .hero-about .about-text h2 {
+  font-size: 70px;
+  font-weight: 900;
+}
+.about-main .hero-about .about-text h2 span {
+  font-weight: 300;
+  color: black;
+}
+.about-main .hero-about .about-text .description-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 75%;
+}
+.about-main .hero-about .about-text .purple-text {
+  color: #FCCEFF;
+  font-style: italic;
+}
+.about-main .location-section {
+  padding: 100px 0;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about-main .location-section h2 {
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 400;
+}
+.about-main .location-section h2 .purple-text {
+  color: #EDB5F1;
+}
+.about-main .location-section #map {
+  height: 750px;
+}
+
+.stay-connected-section {
+  background: #EDB5F1;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.stay-connected-section h2 {
+  font-size: 84px;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.stay-connected-section .connected-list {
+  display: flex;
+  gap: 30px;
+}
+.stay-connected-section .connected-list .text {
+  align-self: end;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.stay-connected-section .connected-list-item {
+  width: 280px;
+}
+.stay-connected-section .icons {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+}
+.stay-connected-section .icons img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(110deg) brightness(98%) contrast(108%);
+  -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(110deg) brightness(98%) contrast(108%);
+  width: 60px;
+  height: 60px;
+}

@@ -1,0 +1,31 @@
+.products {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.products .page-title {
+  font-size: 70px;
+  color: #EDB5F1;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.products .category-list {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+.products .category-list .category-nav {
+  font-size: 24px;
+}
+.products .category-list .category-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.products .category-list .category-nav ul li {
+  padding: 8px 0;
+}
+.products .category-list .category-nav ul .active-link {
+  color: #EDB5F1;
+}
