@@ -1,0 +1,9 @@
+.hero {
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 860px;
+  background: url("../images/banner.png") center no-repeat;
+}
