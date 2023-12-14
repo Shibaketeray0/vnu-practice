@@ -168,7 +168,7 @@
   }
 
   .complete-section {
-    padding: 60px 30px;
+    padding: 60px 20px;
     display: flex;
     flex-direction: column;
     background: $purple-100;
@@ -184,7 +184,7 @@
     .product-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 30px;
+      gap: 20px;
 
       &-item {
         max-width: 280px;

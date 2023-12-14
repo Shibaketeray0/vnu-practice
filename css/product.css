@@ -132,7 +132,7 @@
   display: block;
 }
 .product-main .complete-section {
-  padding: 60px 30px;
+  padding: 60px 20px;
   display: flex;
   flex-direction: column;
   background: #EDB5F1;
@@ -147,7 +147,7 @@
 .product-main .complete-section .product-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
 }
 .product-main .complete-section .product-list-item {
   max-width: 280px;
