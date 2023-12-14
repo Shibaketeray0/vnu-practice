@@ -12,26 +12,96 @@
     text-transform: uppercase;
     font-weight: 400;
   }
-  .category-list{
+
+  .category-list {
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
-    .category-nav{
+
+    .category-nav {
       font-size: 24px;
-      ul{
+
+      ul {
         display: flex;
         flex-direction: column;
         gap: 12px;
-        li{
+
+        li {
           padding: 8px 0;
         }
-        .active-link{
+
+        .active-link {
           color: $purple-100;
         }
       }
     }
-    .products-list{
 
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: end;
+      gap: 30px;
+      row-gap: 40px;
+
+      &-item {
+        max-width: 280px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        font-weight: 700;
+        position: relative;
+        img{
+          user-select: none;
+          -webkit-user-select: none;
+          -webkit-user-drag: none;
+        }
+        &-price{
+          color: $purple-100;
+          font-size: 32px;
+          display: flex;
+          gap: 15px;
+          justify-content: center;
+          align-items: center;
+          .old-price{
+            font-size: 24px;
+            color: #868686;
+            text-decoration: line-through;
+          }
+        }
+        &-description{
+          font-size: 20px;
+          line-height: normal;
+        }
+        .sale{
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          text-transform: uppercase;
+          font-size: 14px;
+          padding: 10px 20px;
+          background: $purple-100;
+          border-radius: 100px;
+        }
+      }
+
+      .load-more-button {
+        flex-basis: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+
+        a {
+          padding: 16px 20px;
+          background: $purple-100;
+          font-size: 16px;
+          font-weight: 700;
+          border: 1px solid black;
+          display: block;
+          width: 240px;
+          text-align: center;
+        }
+      }
     }
   }
 }

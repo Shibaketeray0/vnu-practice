@@ -1,0 +1,260 @@
+@import "variables";
+
+.product-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .product-overview {
+    padding: 0 40px;
+    text-transform: uppercase;
+    display: flex;
+    gap: 30px;
+
+    .images-block {
+      display: flex;
+      gap: 8px;
+
+      .large-image {
+
+      }
+
+      .teaser-images {
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .description {
+      padding-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      .main-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .product-title {
+        font-size: 37px;
+        font-weight: 700;
+      }
+
+      .price {
+        font-size: 40px;
+        font-weight: 900;
+        color: $purple-100;
+      }
+
+      &-text {
+        font-size: 17px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .sizes {
+        display: flex;
+        gap: 10px;
+
+        label {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 40px;
+          font-size: 18px;
+          padding: 0 5px;
+          border-radius: 50px;
+          border: 1px solid black;
+          text-align: center;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        input[type=radio] {
+          display: none;
+        }
+
+        input[type="radio"] {
+          border: 1.2px solid black;
+        }
+
+        input[type="radio"]:checked + label {
+          background-color: $purple-100;
+        }
+      }
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 12px;
+
+      .add-to-cart,
+      .save-for-later {
+        padding: 14px 17px;
+        background: $purple-100;
+        font-size: 16px;
+        font-weight: 700;
+        border: 1px solid black;
+        display: block;
+        width: 180px;
+        text-align: center;
+      }
+
+      .save-for-later {
+        background: transparent;
+      }
+    }
+
+    .dropdowns {
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      font-weight: 400;
+      gap: 20px;
+
+      .dropdown {
+        max-width: 320px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+
+        .title {
+          user-select: none;
+          -webkit-user-select: none;
+          display: flex;
+          justify-content: space-between;
+
+          &:after {
+            content: url("../images/icons/accordion.svg");
+            display: inline-flex;
+            transition: 0.3s ease;
+
+          }
+        }
+
+        .dropdown-content {
+          text-transform: none;
+          display: none;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .open {
+        .title {
+          &:after {
+            transform: rotate(180deg);
+            transition: 0.3s ease;
+          }
+        }
+
+        .dropdown-content {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .complete-section {
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    background: $purple-100;
+    text-transform: uppercase;
+    gap: 40px;
+
+    h2 {
+      font-size: 70px;
+      color: $white;
+      font-weight: 400;
+    }
+
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      &-item {
+        max-width: 280px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        font-weight: 700;
+        position: relative;
+
+        img {
+          height: 100%;
+          object-fit: cover;
+          user-select: none;
+          -webkit-user-select: none;
+          -webkit-user-drag: none;
+        }
+
+        &-price {
+          color: $yellow-100;
+          font-size: 32px;
+          display: flex;
+          gap: 15px;
+          justify-content: center;
+          align-items: center;
+
+          .old-price {
+            font-size: 24px;
+            color: #868686;
+            text-decoration: line-through;
+          }
+        }
+
+        &-description {
+          font-size: 17px;
+          line-height: normal;
+          color: $white;
+        }
+
+        .sale {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          text-transform: uppercase;
+          font-size: 14px;
+          padding: 10px 20px;
+          background: $purple-100;
+          border-radius: 100px;
+        }
+      }
+
+      .view-more-button {
+        text-transform: uppercase;
+        font-family: Impact, sans-serif;
+        font-size: 80px;
+        font-weight: 400;
+        color: transparent;
+
+        a {
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: $white;
+          padding: 92px 52px;
+          border: 1px solid $white;
+          border-radius: 50%;
+          position: relative;
+          top: 33%;
+        }
+      }
+
+    }
+  }
+}

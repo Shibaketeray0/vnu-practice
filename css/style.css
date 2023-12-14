@@ -77,8 +77,12 @@ a {
 }
 
 .wrapper {
-  width: 100vw;
   display: flex;
+  min-height: 100%;
   flex-direction: column;
   gap: 20px;
+}
+
+main {
+  flex: 1 1 auto;
 }

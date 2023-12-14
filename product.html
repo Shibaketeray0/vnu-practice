@@ -4,15 +4,13 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/homepage.css">
-  <title>Homepage</title>
+  <link rel="stylesheet" href="css/product.css">
+  <title>About</title>
 </head>
 <body>
 <div class="wrapper">
@@ -28,12 +26,6 @@
         <input type="text" name="search" placeholder="what are you looking for?">
 
       </div>
-      <div class="burger-menu-wrapper">
-        <div class="burger-menu-toggle">
-          <img src="images/icons/burger-open.svg" alt="burger-toggle">
-        </div>
-      </div>
-
       <div class="logo">
         <img src="images/logo.svg" alt="logo">
       </div>
@@ -72,140 +64,170 @@
       </ul>
     </div>
   </header>
-  <main class="homepage-main">
-    <div class="hero">
-      <div class="discount">
-        35% OFF EVERYTHING!*
-        <span>
-          *THE END OF SEASON SALE IS ON
-        </span>
+  <main class="product-main">
+    <div class="product-overview">
+      <div class="images-block">
+        <div class="large-image">
+          <img src="images/product-page-photo1.png" alt="product-photo">
+        </div>
+        <div class="teaser-images">
+          <img src="images/product-page-photo2.png" alt="product-photo">
+          <img src="images/product-page-photo3.png" alt="product-photo">
+          <img src="images/product-page-photo4.png" alt="product-photo">
+        </div>
+
       </div>
-      <div class="banner">
-        <div class="spring-text">
-          <span>
-            spring
-          </span>
-          <span>
-            spring
-          </span>
-          <span>
-            spring
-          </span>
+      <div class="description">
+        <div class="main-info">
+          <div class="product-title">
+            basic blue suit
+          </div>
+          <div class="price">
+            &dollar; 189
+          </div>
+          <div class="description-text">
+            <p>
+              straight-cut classic trousers. High waist, side slit pockets, hook and eye fastening and zip fastening.
+            </p>
+            <p>
+              classic single-breasted jacket. Featuring a straight fit, notched lapels, flap pockets and matching button
+              fastening. Structured blazer with shoulders lining.
+            </p>
+          </div>
+          <div class="sizes">
+            <div class="size-item">
+              <input type="radio" id="size-xs" name="size">
+              <label for="size-xs">xs</label>
+            </div>
+
+            <div class="size-item">
+              <input type="radio" id="size-s" name="size">
+              <label for="size-s">s</label>
+            </div>
+
+            <div class="size-item">
+              <input type="radio" id="size-m" name="size">
+              <label for="size-m">m</label>
+            </div>
+
+            <div class="size-item">
+              <input type="radio" id="size-l" name="size">
+              <label for="size-l">l</label>
+            </div>
+
+            <div class="size-item">
+              <input type="radio" id="size-xl" name="size">
+              <label for="size-xl">xl</label>
+            </div>
+
+          </div>
+        </div>
+        <div class="action-buttons">
+          <a href="#" class="add-to-cart">add to cart</a>
+          <a href="#" class="save-for-later">save for later</a>
+        </div>
+        <div class="dropdowns">
+          <div class="dropdown">
+            <div class="title">
+              details
+            </div>
+            <div class="dropdown-content">
+              lorem ipsum lorem ipsum
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="title">
+              size guide
+            </div>
+            <div class="dropdown-content">
+              lorem ipsum lorem ipsum
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="title">
+              free shipping & returns
+            </div>
+            <div class="dropdown-content">
+              lorem ipsum lorem ipsum
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="title">
+              payment
+            </div>
+            <div class="dropdown-content">
+              lorem ipsum lorem ipsum
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
-    <div class="trend-section">
-      <div class="tabs">
-        <ul>
-          <li>
-            <a href="#">
-              what's trending
-            </a>
-          </li>
-          <li class="active-link">
-            <a href="">
-              member exclusives
-            </a>
-          </li>
-        </ul>
-      </div>
+    <div class="complete-section">
+      <h2>
+        complete the look
+      </h2>
       <div class="product-list">
+        <div class="product-list-item">
+          <img src="images/catalog-photo8.png" alt="catalog-item">
+          <div class="product-list-item-price">
+            <span class="old-price">
+              &dollar; 69
+            </span>
+            &dollar; 49
+          </div>
+          <div class="product-list-item-description">
+            massive bracelet in gold color
+          </div>
+          <div class="sale">
+            Sale
+          </div>
+        </div>
+        <div class="product-list-item">
+          <img src="images/trend-block-photo1_.png" alt="catalog-item">
+          <div class="product-list-item-price">
+            &dollar; 49
+          </div>
+          <div class="product-list-item-description">
+            bright sandals with an oval wedge
+          </div>
+        </div>
+        <div class="product-list-item">
+          <img src="images/trend-block-photo1(1).png" alt="catalog-item">
+          <div class="product-list-item-price">
+            &dollar; 49
+          </div>
+          <div class="product-list-item-description">
+            eco leather bag with gold details
+          </div>
+        </div>
+        <div class="product-list-item">
+          <img src="images/trend-block-photo1(2).png" alt="catalog-item">
+          <div class="product-list-item-price">
+            &dollar; 49
+          </div>
+          <div class="product-list-item-description">
+            mustard-colored bag with an elongated chain
+
+          </div>
+        </div>
+        <div class="product-list-item">
+          <img src="images/trend-block-photo1(3).png" alt="catalog-item">
+          <div class="product-list-item-price">
+            &dollar; 49
+          </div>
+          <div class="product-list-item-description">
+            sunglasses with a black frame and pebbles
+          </div>
+        </div>
         <div class="view-more-button">
           <a href="#">
             more
           </a>
         </div>
-        <div class="product-list-item">
-          <img src="images/trend-block-photo1.png" alt="trend-photo">
-          <div class="product-list-item-price">
-            &dollar; 47
-          </div>
-          <div class="product-list-item-description">
-            street style top
-          </div>
-        </div>
-        <div class="product-list-item">
-          <img src="images/trend-block-photo2.png" alt="trend-photo">
-          <div class="product-list-item-price">
-            &dollar; 48
-          </div>
-          <div class="product-list-item-description">
-            sneakers with a bright mood
-          </div>
-        </div>
-        <div class="product-list-item">
-          <img src="images/trend-block-photo3.png" alt="trend-photo">
-          <div class="product-list-item-price">
-            &dollar; 49
-          </div>
-          <div class="product-list-item-description">
-            D. good shopper
-          </div>
-        </div>
-        <div class="product-list-item">
-          <img src="images/trend-block-photo4.png" alt="trend-photo">
-          <div class="product-list-item-price">
-            &dollar; 50
-          </div>
-          <div class="product-list-item-description">
-            eco leather skirt with chains
-          </div>
-
-        </div>
-        <div class="product-list-item">
-          <img src="images/trend-block-photo5.png" alt="trend-photo">
-          <div class="product-list-item-price">
-            &dollar; 51
-          </div>
-          <div class="product-list-item-description">
-            oversized gym sweatshirt with bright inserts
-          </div>
-        </div>
       </div>
     </div>
-    <div class="future-section">
-      <h2>
-        in future collections
-      </h2>
-      <div class="future-list">
-        <div class="teaser-menu">
-          <ul>
-            <li><a href="#">
-              summer clothing
-            </a>
-            </li>
-            <li>
-              <a href="#">
-                accessories
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                shoes
-              </a>
-            </li>
-          </ul>
 
-        </div>
-        <div class="future-list-item">
-          <img src="images/future-collections-photo1.png" alt="future-collection-photo">
-        </div>
-        <div class="future-list-item">
-          <img src="images/future-collections-photo2.png" alt="future-collection-photo">
-        </div>
-        <div class="future-list-item">
-          <img src="images/future-collections-photo3.png" alt="future-collection-photo">
-        </div>
-        <div class="future-list-item">
-          <img src="images/future-collections-photo4.png" alt="future-collection-photo">
-        </div>
-        <div class="future-list-item">
-          <img src="images/future-collections-photo5.png" alt="future-collection-photo">
-        </div>
-      </div>
 
-    </div>
   </main>
   <footer>
     <div class="footer__inner">
@@ -278,34 +300,8 @@
       </div>
     </div>
   </footer>
-  <div class="off-canvas-menu">
-    <div class="menu-collection">
-      <ul>
-        <li>
-          <a href="#">new in</a>
-        </li>
-        <li>
-          <a href="#">sale</a>
-        </li>
-        <li>
-          <a href="#">clothing</a>
-        </li>
-        <li>
-          <a href="#">shoes</a>
-        </li>
-        <li>
-          <a href="#">tops</a>
-        </li>
-        <li>
-          <a href="#">accessories</a>
-        </li>
-      </ul>
-    </div>
-    <div class="burger-menu-close">
-      <img src="images/icons/burger-close.svg" alt="burger-close">
-    </div>
-  </div>
 </div>
-<script src="js/header.js"></script>
+
+<script src="js/product.js"></script>
 </body>
 </html>

@@ -1,4 +1,6 @@
 @import "variables";
+@import "media";
+
 
 footer {
   padding: 60px 0;
@@ -11,6 +13,13 @@ footer {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      text-align: center;
+    }
   }
 
   .footer-block {
@@ -23,6 +32,9 @@ footer {
       text-transform: uppercase;
       font-size: 20px;
       font-weight: 700;
+    }
+    @include media-breakpoint-down(md) {
+      gap: 12px;
     }
   }
 
@@ -43,6 +55,10 @@ footer {
   .payment-info {
     max-width: 220px;
 
+    span {
+      white-space: nowrap;
+    }
+
     .payment-methods {
       display: flex;
       gap: 10px;
@@ -53,6 +69,7 @@ footer {
         -webkit-user-drag: none;
       }
     }
+
   }
 
   .contact-us-info {
@@ -61,6 +78,7 @@ footer {
     .mail-form {
       input {
         padding: 10px 0;
+        width: 180px;
         border: unset;
         border-bottom: 1px solid $purple-100;
       }
@@ -87,6 +105,12 @@ footer {
         -webkit-user-select: none;
         -webkit-user-drag: none;
       }
+      @include media-breakpoint-down(md) {
+        justify-content: center;
+      }
     }
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 40px 16px;
   }
 }

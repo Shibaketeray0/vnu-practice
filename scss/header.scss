@@ -1,11 +1,14 @@
 @import "variables";
+@import "media";
+
 
 header {
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  .announce{
+
+  .announce {
     background: $purple-100;
     color: $white;
     padding: 10px 0;
@@ -13,33 +16,55 @@ header {
     font-size: 16px;
     font-weight: 700;
   }
+
   .menu-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
-    div{
-      width: 30%;
+
+    div {
+      width: 33%;
       text-align: center;
     }
+
     .search {
       display: flex;
       align-items: center;
       gap: 10px;
+
       .search-icon {
         width: 30px;
         height: 30px;
       }
-      input{
+
+      input {
         font-size: 13px;
         border: none;
-        min-width: 200px;
+        width: 210px;
+      }
+
+      @include media-breakpoint-down(md) {
+        display: none;
       }
     }
-    .account-nav{
+
+    .logo {
+      img {
+        @include media-breakpoint-down(sm-phone) {
+          max-width: 66px;
+        }
+      }
+
+    }
+
+    .account-nav {
       display: flex;
       justify-content: end;
       gap: 8px;
+    }
+    @include media-breakpoint-down(sm-phone) {
+      padding: 0 16px;
     }
   }
 
@@ -49,9 +74,80 @@ header {
       align-items: center;
       justify-content: center;
       gap: 20px;
-      a{
+
+      a {
+        padding: 8px 12px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+  .burger-menu-wrapper{
+    width: 0 !important;
+    @include media-breakpoint-down(md) {
+      width: 33% !important;
+    }
+  }
+
+  .burger-menu-toggle {
+    max-width: fit-content;
+    display: none;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include media-breakpoint-down(md) {
+      display: block;
+    }
+  }
+
+}
+
+.off-canvas-menu {
+  position: absolute;
+  top: 0;
+  left: -360px;
+  background: $white;
+  width: 280px;
+  height: 100%;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  .burger-menu-close {
+    max-width: fit-content;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .menu-collection {
+    ul {
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      a {
         padding: 8px 12px;
       }
     }
   }
+
+}
+
+.off-canvas-menu.menu-open {
+  left: 0;
+  transition: 0.3s ease;
 }
